@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @assessment.date %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @assessment.user_id %>
+</p>
+
+<p>
+  <strong>Total score:</strong>
+  <%= @assessment.total_score %>
+</p>
+
+<%= link_to 'Edit', edit_assessment_path(@assessment) %> |
+<%= link_to 'Back', assessments_path %>
