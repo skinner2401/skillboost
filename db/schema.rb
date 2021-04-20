@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_20_045755) do
+ActiveRecord::Schema.define(version: 2021_04_20_080342) do
+
+  create_table "assessments", force: :cascade do |t|
+    t.datetime "date"
+    t.integer "user_id"
+    t.float "total_score"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "skills", force: :cascade do |t|
     t.string "name"

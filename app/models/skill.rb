@@ -1,5 +1,5 @@
 class Skill < ApplicationRecord
-  belongs_to :skill_test
+  belongs_to :assessment
 
   validates :name, length: { minimum: 3 }
 end
