@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :skills
+  resources :skill_categories
   resources :assessments
   resources :users
   get 'skills/create'
